@@ -1,0 +1,14 @@
+An implementation of Zooko's z-base32 encoding scheme [z-base-32],
+with some particulars:
+
+i) Uses the alphabet described in Zooko's proposal 
+
+ii) Assumes that full octets are passed in (ie. doesn't expect 10-bit
+strings for example, and will pad to next octet)
+
+iii) Doesn't (yet) decode strings produced from bit strings which
+don't come from full octets. 
+
+iv) Does not pad output with '=' during encoding.
+
+[z-base-32] http://zooko.com/repos/z-base-32/base32/DESIGN
