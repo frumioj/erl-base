@@ -12,3 +12,11 @@ don't come from full octets.
 iv) Does not pad output with '=' during encoding.
 
 [z-base-32] http://zooko.com/repos/z-base-32/base32/DESIGN
+
+To build:
+
+`make compile`
+
+And run tests:
+
+`make test`
